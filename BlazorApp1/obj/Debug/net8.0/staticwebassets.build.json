@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "gq0FvhiPIf0IgmpjNBIDzkx6czV1Gl3vyyWOJpp2+hE=",
+  "Source": "BlazorApp1",
+  "BasePath": "_content/BlazorApp1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlazorApp1\\wwwroot",
+      "Source": "BlazorApp1",
+      "ContentRoot": "C:\\Users\\timfi\\Desktop\\VS - Ob\\WebDev\\Blazor Apps\\BlazorApp1\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\timfi\\Desktop\\VS - Ob\\WebDev\\Blazor Apps\\BlazorApp1\\wwwroot\\app.css",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\timfi\\Desktop\\VS - Ob\\WebDev\\Blazor Apps\\BlazorApp1\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    }
+  ]
+}

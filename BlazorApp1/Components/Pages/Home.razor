@@ -1,0 +1,58 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<div class="container mb-5">
+    <div class="mt-4 p-5 rounded">
+        <h1 class="text-primary">Welcoming Message here</h1>
+        <p class="text-dark">Purpose of website here....</p>
+        <button class="btn btn-primary p-2" style="width: 150px;">Button</button>
+    </div>
+</div>
+<div class="container mb-5">
+    <div class="text-center mb-4">
+        <h2>Heading Here</h2>
+    </div>
+    <div class="row">
+        @for (int i=0; i<4; i++)
+        {
+            <div class="col card m-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sub Heading</h5>
+                    <p class="card-text">example text that makes up the bulk of the card's content here.</p>
+                    <button class="btn btn-primary p-2" style="width: 100px;">Button</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="container mb-5">
+        <div class="row shadow p-3 mb-5 bg-body rounded">
+            <h2 class="text-center mb-5 mt-5">Community Sign Up Form</h2>
+            <div class="col">
+                <div class="d-flex flex-column justify-content-end align-items-end">
+                    <input type="text" class="input-group-text mb-2" placeholder="Name..." style="width: 400px;" />
+                    <input type="text" class="input-group-text mb-4" placeholder="Surname..." style="width: 400px;" />
+                    <input type="text" class="input-group-text" placeholder="Email" style="width: 400px;" />
+                    <text class="text-center mb-1 mt-1" style="width: 400px;">Or</text>
+                    <input type="text" class="input-group-text mb-4" placeholder="Cell Number" style="width: 400px;" />
+                    <input type="text" class="input-group-text mb-2" placeholder="Age" style="width: 400px;" />
+                    <select class="input-group-text" aria-label=".form-select-lg example" style="width: 400px;">
+                        <option selected>Group to join?</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col pb-4">
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                    <p class="pb-2" style="width: 400px;">Please, Introduce yourself and tell us why you would like to join our community!...</p>
+                    <textarea class="input-group-text mb-2" placeholder="..." style="width: 400px; height: 250px;"></textarea>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <button class="btn btn-primary" style="width: 150px;">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+﻿@inherits LayoutComponentBase
+
+<div class="container-fluid shadow p-3 mb-5 bg-body rounded" style="">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col row w-50 justify-content-md-center">
+            <div class="row justify-content-md-center">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <NavLink href="/" class="nav-link text-dark d-flex justify-content-evenly align-items-center">
+                        <icon class="material-symbols-outlined">home</icon>
+                        Home
+                    </NavLink>
+                </div>
+                <div class="col">
+                    <NavLink href="/" class="nav-link text-dark d-flex justify-content-evenly align-items-center">
+                        <icon class="material-symbols-outlined">shopping_cart</icon>
+                        Shop
+                    </NavLink>
+                </div>
+                <div class="col">
+                    <NavLink href="/" class="nav-link text-dark d-flex justify-content-evenly align-items-center">
+                        <icon class="material-symbols-outlined">account_circle</icon>
+                        Contact
+                    </NavLink>
+                </div>  
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 row">
+            <button class="btn btn-primary col-lg-5 d-flex justify-content-evenly align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <icon class="material-symbols-outlined">send</icon>
+                Message
+            </button>
+            <button class="btn btn-light col-lg-5 d-flex border-dark justify-content-evenly align-items-center ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogin" aria-controls="offcanvasLogin">
+                <icon class="material-symbols-outlined">account_circle</icon>
+                Sign in
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header shadow p-3 mb-4 bg-body rounded">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="mb-5">
+            <p>Have a question?... send us a message and we'll answer any queries you might have. </p>
+        </div>
+        <div>
+            <div class="border border-dark rounded m-auto mb-3" style="width: 300px; height: 350px;">
+        
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <input type="text" class="input-group-text"  placeholder="Message..."/>
+            <div class=" ps-2">
+                <button class="btn btn-primary d-flex flex-row justify-content-evenly align-items-center">
+                    <icon class="material-symbols-outlined">send</icon>
+                    <text class="ps-2"></text>Send
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLogin" aria-labelledby="offcanvasLoginLabel">
+    <div class="offcanvas-header shadow p-3 mb-5 bg-body rounded">
+        <h5 class="offcanvas-title d-flex justify-content-evenly align-items-center" id="offcanvasExampleLabel">
+            <icon class="material-symbols-outlined">login</icon>
+            <text class="ps-2">User Sign in</text>
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <form method="get" asp-action="Login" style="height: 100%;">
+        <div class="offcanvas-body" style="height: 100%;">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
+                <icon class="material-symbols-outlined pb-4" style="font-size: 100px;">person</icon>
+                <div class="d-flex flex-column justify-content-start pb-5">
+                    <div class="pb-2">
+                        <input type="text" name="email" class="input-group-text" placeholder="Email" style="width: 250px;"/>
+                    </div>
+                    <div class="pb-3">
+                        <input type="password" name="password" class="input-group-text p-2" placeholder="Password" style="width: 250px;"/>
+                    </div>
+                    <div style="height: 50px;">
+                        <a href="#" class="text-start">forgot password?</a>
+                    </div>
+                </div>
+                <div class="pb-3">
+                    <button type="submit" class="btn btn-primary pb-2" style="width: 150px;">Sign in</button>
+                </div>
+                <div>
+                    <a href="#">Don't have an Account?</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@code {
+
+}
